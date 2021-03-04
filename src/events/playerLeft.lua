@@ -17,9 +17,9 @@ eventPlayerLeft = function(name)
         game.canStart = false
         phrased=false
         tfm.exec.setUIMapName(game.phrases[math.random(#game.phrases)])
-        for name,v in pairs(tfm.get.room.playerList) do
-            sendMessage(translate(name,"minPlayers"),name)
-            ui.addTextArea(6854,"<p align='center'><font size='50' face='Freestyle Script' color='#FFFFFF'>"..translate(name,"wtP"),nil,449,207,nil,nil,nil,nil,0,false)
+        for player,v in pairs(tfm.get.room.playerList) do
+            sendMessage(translate(player,"minPlayers"),player)
+            ui.addTextArea(6854,"<p align='center'><font size='50' face='Freestyle Script' color='#FFFFFF'>"..translate(player,"wtP"),player,449,207,nil,nil,nil,nil,0,false)
         end
         tfm.exec.newGame(game.startMap)
     else
