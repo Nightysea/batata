@@ -30,4 +30,6 @@
         ["time"]  = "<J>%s <BL>- %s   |  <N>Tempo : <V>%i segúndos",
         ["HowToPlay"] = "<V>Como jogar?</V><br>Você precisa apenas dos jogadores pra jogar, se você tem a batata, você precisa tocar ESPAÇO pra evadir a exploçao do ela em você. Se o Countdown finaliçou, o jogador com a batata vai morrer! Você pode ver seu menú en Menú>Perfil"
     },
+
+--[[ src/translations/pt.lua ]]--
 lang.PT=lang.BR
